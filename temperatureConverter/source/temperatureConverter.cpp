@@ -6,13 +6,13 @@
 #include <iomanip>
 
 
-static double TwoDecimalRounding(double a)
+static double TwoDecimalRounding(const double& a)
 {
 	return round(a * 100) / 100;  // Round 0.23451 to 0.23
 }
 
 
-static void Convertor(double a, char b)
+static void Convertor(const double& a, const char& b)
 {
 	const double kFahrenCoeff = 32.0;
 	const double kFactor = 1.8000;
